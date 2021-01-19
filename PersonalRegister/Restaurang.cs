@@ -51,9 +51,15 @@ namespace PersonalRegister
 
             if(anstallda != null && anstallda.Count > 0)
             {// Vi har anställda
-                foreach(Anstalld ans in anstallda)
+                
+                strBuilder.Append(System.Environment.NewLine);
+                strBuilder.Append("Anställda");
+                strBuilder.Append(System.Environment.NewLine);
+
+                foreach (Anstalld ans in anstallda)
                 {
                     strBuilder.Append(ans);
+                    strBuilder.Append(System.Environment.NewLine);
                 }
             }
 
