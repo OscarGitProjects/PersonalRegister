@@ -4,6 +4,9 @@ using System.Text;
 
 namespace PersonalRegister
 {
+    /// <summary>
+    /// Klass med information om en restaurang och en lista med anställda
+    /// </summary>
     public class Restaurang
     {
         /// <summary>
@@ -16,6 +19,16 @@ namespace PersonalRegister
         /// </summary>
         private List<Anstalld> anstallda = null;
 
+        /// <summary>
+        /// Property som returnerar listan med anställda
+        /// </summary>
+        public List<Anstalld> Anstallda 
+        {
+            get 
+            {
+                return anstallda;
+            } 
+        }
 
         /// <summary>
         /// Metoden lägger till anställd till listan med anställda

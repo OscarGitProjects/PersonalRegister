@@ -3,7 +3,7 @@ using NUnit.Framework;
 namespace PersonalRegister.Tests
 {
     /// <summary>
-    /// Klas med test av klassen Anstalld
+    /// Klass med test av klassen Anstalld
     /// </summary>
     public class AnstalldTests
     {
@@ -16,6 +16,9 @@ namespace PersonalRegister.Tests
             Anstalld = new Anstalld();
         }
 
+        /// <summary>
+        /// Testar att man kan lägga till uppgifter om den anställdes förnamn och efternamn
+        /// </summary>
         [Test]
         public void Namn()
         {
@@ -28,6 +31,9 @@ namespace PersonalRegister.Tests
         }
 
 
+        /// <summary>
+        /// Testar att man kan lägga till uppgifter om den anställdes lön
+        /// </summary>
         [Test]
         public void Lon()
         {
