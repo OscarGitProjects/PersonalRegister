@@ -34,6 +34,7 @@ namespace PersonalRegister
         /// Metoden lägger till anställd till listan med anställda
         /// </summary>
         /// <param name="anstalld"></param>
+        /// <exception cref="System.ArgumentNullException">Undantaget kastas om referensen till Anstalld är null</exception>
         public void AddAnstalld(Anstalld anstalld)
         {
             if (anstalld == null)
